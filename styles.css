@@ -1,0 +1,99 @@
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('assets/background.png'); /* Caminho da imagem */
+    background-size: cover;       /* Ajusta a imagem para cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center;  /* Centraliza a imagem */
+    font-family: Arial, sans-serif;
+    color: #fff;                  /* Cor do texto para contraste */
+}
+
+  
+  /* Container principal */
+  .container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente para contraste */
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 100px auto; /* Centraliza verticalmente */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+  /* Título */
+  h1 {
+    font-size: 24px;
+    color: #FFD700;
+    margin-bottom: 20px;
+  }
+  
+  /* Input */
+  input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #0078d7;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    color: #FFD700;
+  }
+  
+  /* Botão */
+  button {
+    background-color: transparent;
+    color: #FFD700;
+    border: 2px solid #28a745;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #000;
+    color: #28a745;
+  }
+  
+  /* Resultado */
+  #resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #000;
+    color: #00FF00;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Esconder resultado inicialmente */
+  .hidden {
+    display: none;
+  }
+  
+  input, button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#resultado {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
