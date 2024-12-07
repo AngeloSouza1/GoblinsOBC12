@@ -1,99 +1,154 @@
 /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização do body */
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: url('assets/background.png'); /* Caminho da imagem */
-    background-size: cover;       /* Ajusta a imagem para cobrir toda a tela */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-position: center;  /* Centraliza a imagem */
-    font-family: Arial, sans-serif;
-    color: #fff;                  /* Cor do texto para contraste */
+  font-family: 'Arial', sans-serif;
+  background-image: url('assets/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-  
-  /* Container principal */
-  .container {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente para contraste */
-    border-radius: 15px;
-    max-width: 600px;
-    margin: 100px auto; /* Centraliza verticalmente */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-}
-  /* Título */
-  h1 {
-    font-size: 24px;
-    color: #FFD700;
-    margin-bottom: 20px;
-  }
-  
-  /* Input */
-  input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 2px solid #0078d7;
-    border-radius: 10px;
-    font-size: 16px;
-    background-color: #1e1e1e;
-    color: #FFD700;
-  }
-  
-  /* Botão */
-  button {
-    background-color: transparent;
-    color: #FFD700;
-    border: 2px solid #28a745;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #000;
-    color: #28a745;
-  }
-  
-  /* Resultado */
-  #resultado {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #000;
-    color: #00FF00;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  /* Esconder resultado inicialmente */
-  .hidden {
-    display: none;
-  }
-  
-  input, button {
-    font-size: 16px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    border: none;
+/* Container centralizado */
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
 }
 
+/* Título */
+h1 {
+  color: #ffeb3b;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Parágrafo de instruções */
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Campo de entrada */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+/* Botão principal */
 button {
-    background-color: #28a745;
-    color: #fff;
-    cursor: pointer;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background-color: #218838;
+  background-color: #218838;
+  transform: scale(1.05);
 }
 
+
+/* Ícones para resultado */
+.result-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+/* Sucesso */
+.result-success {
+  color: #28a745;
+}
+
+/* Erro */
+.result-error {
+  color: #ff4c4c;
+}
+
+/* Botão de reiniciar */
+#reiniciarBotao {
+  margin-top: 15px;      /* Espaçamento acima do botão */
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-block; /* Garante que o botão não ocupa a largura total */
+}
+
+#reiniciarBotao:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Resultado */
 #resultado {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 20px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ffeb3b;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 8px;
+  display: inline-block;
+  width: 100%;
+  text-align: center; /* Centraliza o texto e o botão de reiniciar */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Botão de reiniciar */
+#reiniciarBotao {
+  margin-top: 25px;      /* Aumentado o espaçamento acima do botão */
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-block; /* Garante que o botão não ocupa a largura total */
+}
+
+#reiniciarBotao:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
 }

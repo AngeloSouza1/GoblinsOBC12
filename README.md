@@ -3,38 +3,34 @@
 <div align="justify">Quebre a Criptomoeda dos Goblins" é uma aplicação interativa desenvolvida em JavaScript, HTML e CSS. Seu objetivo é decifrar o algoritmo usado pelos goblins para transformar seus valores criptográficos. A aplicação permite que você insira uma lista de números e os transforme seguindo regras específicas, enquanto oferece uma interface visual intuitiva e divertida</div>
 
 ### 💻 Sobre o projeto
+
 ---
 
 <div align="justify">Esta aplicação transforma uma lista de números com base em um algoritmo enigmático dos goblins:
 
-   - Se o número for par, ele é multiplicado por 3.
-   - Se o número for ímpar, subtraímos 5.
+- Se o número for par, ele é multiplicado por 3.
+- Se o número for ímpar, subtraímos 5.
 
 A interface permite inserir números, validar a entrada e visualizar os resultados rapidamente. A estilização e interatividade tornam o processo dinâmico e divertido!
-
 
 #### 👁️‍🗨️ Funcionalidades Principais
 
 🔹 Transformação de Números:
 
-   - Insira números separados por vírgula e transforme-os com um clique.
+- Insira números separados por vírgula e transforme-os com um clique.
 
 🔹 Validação de Entrada:
 
-  - Garante que apenas números válidos sejam processados.
+- Garante que apenas números válidos sejam processados.
 
 🔹 Interface Interativa:
 
-  -  Botão para processar os dados e exibir os resultados.
-  -  Mensagens de erro para entradas inválidas.
+- Botão para processar os dados e exibir os resultados.
+- Mensagens de erro para entradas inválidas.
 
 🔹 Estilização Temática:
 
-  - Visual inspirado no universo dos goblins.
-
-🔹 Testes Automatizados:
-
-  -  Testes implementados com Jest para garantir a precisão da função de transformação.
+- Visual inspirado no universo dos goblins.
 
 </div>
 
@@ -46,43 +42,37 @@ A interface permite inserir números, validar a entrada e visualizar os resultad
 
 🔹 CSS: Estilização e layout.
 
-🔹 Jest: Framework de testes para JavaScript.
-
 ---
 
 ### 💡 Veja!
 
 🔹 Video Demonstrativo:
 
-
-
 ---
 
 ### 🔧 Como Executar o Projeto
+
 Pré-requisitos
 
 🔹 Node.js e npm instalados no sistema.
 
-
 Passo a Passo
 
 🔹 Clone o repositório ou faça o download do código.
+
 ```
-git clone https://github.com/seu-usuario/cripto-goblins.git
-cd cripto-goblins
+git clone https://github.com:AngeloSouza1/GoblinsOBC12.git
+cd GoblinsOBC12
 ```
 
+
 🔹 Instale as dependências:
+
 ```
 npm install
 ```
+
 🔹Abra o arquivo index.html no navegador para rodar a aplicação.
-
-🔹 Para executar os testes com Jest:
-```
-npm test
-
-```
 
 ---
 
@@ -96,7 +86,7 @@ npm test
 
 ---
 
-###  🤝🏻 Contribuição
+### 🤝🏻 Contribuição
 
 Contribuições são bem-vindas! Se você quiser contribuir para o projeto, siga estas etapas:
 
@@ -111,10 +101,13 @@ Contribuições são bem-vindas! Se você quiser contribuir para o projeto, siga
 🔹 Envie um pull request.
 
 ---
+
 ### Licença
 
 Este projeto é licenciado sob a MIT License.
 
 ---
+
 ### 📧 Contato
+
 Para mais informações ou para relatar problemas, entre em contato pelo angeloafdesouza@gmail.com
